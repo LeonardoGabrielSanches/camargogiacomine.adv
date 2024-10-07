@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/core/Header";
 // 50 + 32 + header = 100%
 export default function HomeSection() {
     return (

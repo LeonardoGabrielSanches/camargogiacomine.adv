@@ -16,8 +16,8 @@ export default function Header() {
             <div className='flex items-center max-w-5xl mx-auto justify-end gap-2 h-10'>
                 <a href="https://www.instagram.com/camargogiacomine.adv/" target='_blank'><img src={instagramLogo} alt="Instagram logo" className='w-4 h-4' /></a>
                 <a href="" target='_blank'><img src={linkedinLogo} alt="Linkedin logo" className='w-4 h-4' /></a>
-                <a href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos+trabalhistas.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0" target='_blank'><img src={whatsappLogo} alt="Whatsapp logo" className='w-4 h-4' /></a>
                 <a href="" target='_blank'><img src={facebookLogo} alt="Facebook logo" className='w-4 h-4' /></a>
+                <a href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos+trabalhistas.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0" target='_blank'><img src={whatsappLogo} alt="Whatsapp logo" className='w-4 h-4' /></a>
             </div>
 
             <header className='flex items-center justify-between h-24 max-w-5xl mx-auto'>
