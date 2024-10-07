@@ -22,10 +22,10 @@ export default function Header() {
 
             <header className='flex items-center justify-between h-24 max-w-5xl mx-auto'>
                 <div>
-                    <img src={logo} alt="Camargo e giacomine advogados" className="w-64" />
+                    <img src={logo} alt="Camargo e giacomine advogados" className="w-72" />
                 </div>
                 <nav className='items-center space-x-10 text-white'>
-                    <button onClick={() => navigateTo(1)} className='hover:text-hover hover:transition-all hover:duration-300'>Ínicio</button>
+                    <button onClick={() => navigateTo(0)} className='hover:text-hover hover:transition-all hover:duration-300'>Ínicio</button>
                     <button onClick={() => navigateTo(2)} className='hover:text-hover hover:transition-all hover:duration-300'>O Escritório</button>
                     <button onClick={() => navigateTo(3)} className='hover:text-hover hover:transition-all hover:duration-300'>Áreas de atuação</button>
                     <button onClick={() => navigateTo(4)} className='hover:text-hover hover:transition-all hover:duration-300'>Contato</button>
