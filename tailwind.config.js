@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        crimson: ['Crimson Text', 'serif'],
+      },
       backgroundImage: {
         'law': "url('/img/background.jpg')",
       },
