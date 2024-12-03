@@ -1,6 +1,6 @@
 export default function WorkingAreasSection() {
     return (
-        <section className="bg-gradient-to-b from-[#f5f5f5] to-[#e8e8e8] text-[#1f364e] px-8 py-16 lg:px-32">
+        <section id="areas-atuacao" className="bg-gradient-to-b from-[#f5f5f5] to-[#e8e8e8] text-[#1f364e] px-8 py-16 lg:px-32">
             <div className="max-w-6xl mx-auto">
                 {/* Título e Introdução */}
                 <div className="text-center mb-16">

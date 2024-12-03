@@ -5,8 +5,7 @@ import facebookLogo from '@/assets/facebook.svg'
 
 export default function ContactSection() {
     return (
-        <section className="bg-[#d9d9d9] flex flex-col lg:flex-row justify-center lg:justify-evenly items-center py-16 text-[#1f364e] gap-10 lg:gap-0 px-4">
-            {/* Google Maps */}
+        <section id="contato" className="bg-[#d9d9d9] flex flex-col lg:flex-row justify-center lg:justify-evenly items-center py-16 text-[#1f364e] gap-10 lg:gap-0 px-4">
             <iframe
                 src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_MAPS_API_KEY}&q=Camargo+%26+Giacomine+Advogados`}
                 className="w-full lg:w-[600px] h-[300px] lg:h-[450px] rounded-md shadow-md"
@@ -14,29 +13,24 @@ export default function ContactSection() {
                 title="Camargo e Giacomine Advogados"
             ></iframe>
 
-            {/* Contato */}
             <div className="flex flex-col w-full lg:w-auto">
                 <h1 className="text-2xl lg:text-4xl mb-8 lg:mb-14 text-center lg:text-left">Contato</h1>
 
-                {/* WhatsApp */}
                 <div className="flex flex-col mb-6 lg:mb-8">
                     <span className="text-[#174472] text-lg">Whatsapp</span>
                     <span className="text-sm">(15) 99768-1165</span>
                 </div>
 
-                {/* Email */}
                 <div className="flex flex-col mb-6 lg:mb-8">
                     <span className="text-[#174472] text-lg">Email</span>
                     <span className="text-sm">email@email.com.br</span>
                 </div>
 
-                {/* Endereço */}
                 <div className="flex flex-col mb-6 lg:mb-8">
                     <span className="text-[#174472] text-lg">Endereço</span>
                     <span className="text-sm">R. Dr. Prudente de Moraes, 792 - Centro, Tatuí - SP, 18275-110</span>
                 </div>
 
-                {/* Redes Sociais */}
                 <div className="flex flex-col mb-6 lg:mb-8">
                     <span className="text-[#174472] text-lg">Nossas redes</span>
                     <div className="flex gap-3 mt-2 justify-center lg:justify-start">

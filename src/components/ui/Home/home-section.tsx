@@ -2,7 +2,7 @@ import Header from "@/components/core/Header";
 
 export default function HomeSection() {
     return (
-        <section className="min-h-screen bg-gradient-to-r from-background via-gradient" id="home">
+        <section id="inicio" className="min-h-screen bg-gradient-to-r from-background via-gradient">
             <Header />
 
             <section className="flex flex-col items-center lg:items-start justify-center text-center lg:text-left max-w-4xl mx-auto px-4 lg:px-0 min-h-[50vh]">

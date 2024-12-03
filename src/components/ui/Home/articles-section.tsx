@@ -2,11 +2,11 @@ import articles from '@/articles.json'
 
 export default function ArticlesSection() {
     return (
-        <section className="min-h-screen bg-[#174472] text-white flex flex-col items-center justify-center">
+        <section id="artigos" className="min-h-screen bg-[#174472] text-white flex flex-col items-center justify-center">
             <div className="px-4 lg:px-32 py-8 lg:py-16 z-50 gap-10 lg:gap-20 flex flex-col w-full">
                 <h1 className="text-2xl lg:text-4xl text-center">Conheça nossos artigos</h1>
 
-                <div className="flex flex-wrap justify-center gap-6 lg:gap-8 w-full max-w-6xl">
+                <div className="flex flex-wrap justify-center gap-6 lg:gap-12 w-full">
                     {articles.highlighted.map((article, index) => (
                         <div
                             key={index}
@@ -24,6 +24,5 @@ export default function ArticlesSection() {
                 </div>
             </div>
         </section>
-
     )
 }
