@@ -1,8 +1,9 @@
+import { Link } from 'react-router'
+
 export default function WorkingAreasSection() {
     return (
         <section id="areas-atuacao" className="bg-gradient-to-b from-[#f5f5f5] to-[#e8e8e8] text-[#1f364e] px-8 py-16 lg:px-32">
             <div className="max-w-6xl mx-auto">
-                {/* Título e Introdução */}
                 <div className="text-center mb-16">
                     <h1 className="text-5xl font-bold mb-6 text-[#174472]">
                         Áreas de Atuação
@@ -12,94 +13,91 @@ export default function WorkingAreasSection() {
                     </p>
                 </div>
 
-                {/* Seções com Cards */}
                 <div className="grid lg:grid-cols-2 gap-12">
-                    {/* Direito Trabalhista */}
                     <div className="bg-white shadow-lg rounded-lg p-8 hover:shadow-xl transition-shadow duration-300">
                         <h2 className="text-2xl font-semibold mb-6 text-[#174472]">
                             Direito Trabalhista
                         </h2>
                         <ul className="space-y-4 text-[#4a4a4a]">
                             <li>
-                                <a href="#defesa-trabalhadores" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/defesa-trabalhadores" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Defesa de trabalhadores em casos de rescisão de contrato e verbas rescisórias.
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#assedio-moral" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/assedio-moral" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Ações de assédio moral e sexual no ambiente de trabalho.
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#vinculo-empregaticio" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/vinculo-empregaticio" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Reconhecimento de vínculo empregatício.
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#horas-extras" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/horas-extras" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Revisão de salários, horas extras e intervalos.
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#adicional-insalubridade" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/adicional-insalubridade" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Adicionais de insalubridade e periculosidade.
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#acidentes-trabalho" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/acidentes-trabalho" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Defesa em casos de acidentes de trabalho e doenças ocupacionais.
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
 
-                    {/* Direito Previdenciário */}
                     <div className="bg-white shadow-lg rounded-lg p-8 hover:shadow-xl transition-shadow duration-300">
                         <h2 className="text-2xl font-semibold mb-6 text-[#174472]">
                             Direito Previdenciário
                         </h2>
                         <ul className="space-y-4 text-[#4a4a4a]">
                             <li>
-                                <a href="#aposentadoria" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/aposentadoria" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Aposentadoria por idade, tempo de contribuição, invalidez e especial.
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#revisao-beneficios" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/revisao-beneficios" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Revisão de benefícios previdenciários.
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#auxilios-temporarios" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/auxilios-temporarios" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Auxílios por incapacidade temporária (doença) e acidentário.
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#pensao-morte" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/pensao-morte" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Pensão por morte.
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#bpc-loas" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/bpc-loas" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Benefícios assistenciais (BPC/LOAS).
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#planejamento-previdenciario" className="group flex items-center gap-2 hover:text-[#174472]">
+                                <Link to="/areas-atuacao/planejamento-previdenciario" className="group flex items-center gap-2 hover:text-[#174472]">
                                     <span className="w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
                                     Planejamento previdenciário para assegurar maior segurança e benefícios justos.
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

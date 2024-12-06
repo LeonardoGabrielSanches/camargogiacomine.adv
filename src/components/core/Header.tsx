@@ -1,3 +1,5 @@
+import { useNavigate, useParams } from "react-router";
+
 import instagramLogo from '@/assets/instagram.svg'
 import linkedinLogo from '@/assets/linkedin.svg'
 import whatsappLogo from '@/assets/whatsapp.svg'
@@ -6,16 +8,37 @@ import lawImg from '@/assets/backgound.jpg'
 import logo from '@/assets/logo.jpg'
 
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export default function Header() {
+type HeaderProps = {
+    mainPage?: boolean
+}
+
+export default function Header({ mainPage = true }: HeaderProps) {
+    const navigate = useNavigate();
+    const params = useParams()
+
     const [menuOpen, setMenuOpen] = useState(false);
 
+    useEffect(() => {
+        if (mainPage)
+            scrollToSelector(params.selector ?? 'inicio')
+    }, [mainPage, params.selector])
+
     function navigateTo(selector: string) {
+        if (mainPage)
+            scrollToSelector(selector)
+        else
+            navigate(`/${selector}`)
+
+
+        setMenuOpen(false);
+    }
+
+    function scrollToSelector(selector: string) {
         const element = document.getElementById(selector)
 
         element?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-        setMenuOpen(false);
     }
 
     function toggleMenu() {
@@ -52,7 +75,7 @@ export default function Header() {
                     <button onClick={() => navigateTo("inicio")} className="hover:text-hover transition-all duration-300">Início</button>
                     <button onClick={() => navigateTo("escritorio")} className="hover:text-hover transition-all duration-300">O Escritório</button>
                     <button onClick={() => navigateTo("areas-atuacao")} className="hover:text-hover transition-all duration-300">Áreas de Atuação</button>
-                    <button onClick={() => navigateTo("artigos")} className="hover:text-hover transition-all duration-300">Publicações</button>
+                    <button onClick={() => navigateTo("artigos")} className="hover:text-hover transition-all duration-300">Artigos</button>
                     <button onClick={() => navigateTo("contato")} className="hover:text-hover transition-all duration-300">Contato</button>
                 </nav>
 
