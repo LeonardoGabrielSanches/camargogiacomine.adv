@@ -1,6 +1,12 @@
 import Header from "@/components/core/Header";
 
 export default function HomeSection() {
+    function scroll() {
+        const contact = document.getElementById("contato")
+
+        contact?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+
     return (
         <section id="inicio" className="min-h-screen bg-gradient-to-r from-background via-gradient">
             <Header />
@@ -9,12 +15,12 @@ export default function HomeSection() {
                 <span className="text-2xl lg:text-4xl text-white max-w-full lg:max-w-screen-md">
                     Defendendo sua jornada, protegendo seu futuro.
                 </span>
-                <a
-                    href="#"
+                <button
+                    onClick={scroll}
                     className="flex items-center justify-center text-lg lg:text-3xl text-background w-48 lg:w-64 h-10 lg:h-12 bg-foreground mt-6 lg:mt-10"
                 >
                     Localize-nos!
-                </a>
+                </button>
             </section>
 
             <section className="bg-foreground flex flex-col items-center text-center justify-center px-4 py-8 lg:py-8 gap-6">
