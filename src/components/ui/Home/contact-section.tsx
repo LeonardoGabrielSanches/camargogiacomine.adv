@@ -17,18 +17,18 @@ export default function ContactSection() {
                 <h1 className="text-2xl lg:text-4xl mb-8 lg:mb-14 text-center lg:text-left">Contato</h1>
 
                 <div className="flex flex-col mb-6 lg:mb-8">
-                    <span className="text-[#174472] text-lg">Whatsapp</span>
-                    <span className="text-sm">(15) 99768-1165</span>
+                    <span className="text-[#174472] text-xl">Whatsapp</span>
+                    <span className="text-md">(15) 99768-1165</span>
                 </div>
 
                 <div className="flex flex-col mb-6 lg:mb-8">
-                    <span className="text-[#174472] text-lg">Email</span>
-                    <span className="text-sm">email@email.com.br</span>
+                    <span className="text-[#174472] text-xl">Email</span>
+                    <span className="text-md">camargogiacomine.adv@gmail.com</span>
                 </div>
 
                 <div className="flex flex-col mb-6 lg:mb-8">
-                    <span className="text-[#174472] text-lg">Endereço</span>
-                    <span className="text-sm">R. Dr. Prudente de Moraes, 792 - Centro, Tatuí - SP, 18275-110</span>
+                    <span className="text-[#174472] text-xl">Endereço</span>
+                    <span className="text-md">R. Dr. Prudente de Moraes, 792 - Centro, Tatuí - SP, 18275-110</span>
                 </div>
 
                 <div className="flex flex-col mb-6 lg:mb-8">
@@ -37,10 +37,10 @@ export default function ContactSection() {
                         <a href="https://www.instagram.com/camargogiacomine.adv/" target="_blank">
                             <img src={instagramLogo} alt="Instagram logo" className="w-6 h-6 hover:opacity-75" />
                         </a>
-                        <a href="" target="_blank">
+                        <a href="https://www.linkedin.com/company/102332127/admin/page-posts/published/" target="_blank">
                             <img src={linkedinLogo} alt="Linkedin logo" className="w-6 h-6 hover:opacity-75" />
                         </a>
-                        <a href="" target="_blank">
+                        <a href="https://www.facebook.com/profile.php?id=61560800206262&locale=pt_BR" target="_blank">
                             <img src={facebookLogo} alt="Facebook logo" className="w-6 h-6 hover:opacity-75" />
                         </a>
                         <a href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos+trabalhistas.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0" target="_blank">

@@ -51,10 +51,10 @@ export default function Header({ mainPage = true }: HeaderProps) {
                 <a href="https://www.instagram.com/camargogiacomine.adv/" target="_blank" rel="noopener noreferrer">
                     <img src={instagramLogo} alt="Instagram logo" className="w-5 h-5 hover:opacity-75" />
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/company/102332127/admin/page-posts/published/" target="_blank" rel="noopener noreferrer">
                     <img src={linkedinLogo} alt="Linkedin logo" className="w-5 h-5 hover:opacity-75" />
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/profile.php?id=61560800206262&locale=pt_BR" target="_blank" rel="noopener noreferrer">
                     <img src={facebookLogo} alt="Facebook logo" className="w-5 h-5 hover:opacity-75" />
                 </a>
                 <a
