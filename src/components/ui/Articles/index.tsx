@@ -41,7 +41,7 @@ export function Articles() {
 
     const { data, isLoading, error } = useQuery<{ articles: [{ titulo: string, imagem: { url: string }, conteudo: { html: string } }] }>({
         queryKey: ['articles', params.slug],
-        queryFn: async () => await request(import.meta.env.VITE_GRAPHQL_ENDPOINT, query, { slug: "legal-seria-validar-um-padrao-de-tamanho-do-titulo-e-caso-seja-necessario-tambem-tamanho-do-excerto" }),
+        queryFn: async () => await request(import.meta.env.VITE_GRAPHQL_ENDPOINT, query, { slug: params.slug }),
         enabled: !!params.slug,
     });
 
