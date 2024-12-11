@@ -1,6 +1,6 @@
 import gataoImg from '@/assets/gatao.png'
 
-export function Office2() {
+export function Team() {
     return (
         <section className="bg-[#101b27] text-white px-8 py-16 lg:px-32">
             <div className="max-w-6xl mx-auto">

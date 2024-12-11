@@ -15,12 +15,21 @@ export default function HomeSection() {
                 <span className="text-2xl lg:text-4xl text-white max-w-full lg:max-w-screen-md">
                     Defendendo sua jornada, protegendo seu futuro.
                 </span>
-                <button
-                    onClick={scroll}
-                    className="flex items-center justify-center text-lg lg:text-3xl text-background w-48 lg:w-64 h-10 lg:h-12 bg-foreground mt-6 lg:mt-10"
-                >
-                    Localize-nos!
-                </button>
+                <div className="flex gap-6">
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos+trabalhistas.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0"
+                        target="_blank"
+                        className="flex items-center justify-center text-lg lg:text-3xl text-background w-48 lg:w-64 h-10 lg:h-12 bg-foreground mt-6 lg:mt-10"
+                    >
+                        Fale Conosco
+                    </a>
+                    <button
+                        onClick={scroll}
+                        className="flex items-center justify-center text-lg lg:text-3xl text-background w-48 lg:w-64 h-10 lg:h-12 bg-foreground mt-6 lg:mt-10"
+                    >
+                        Localize-nos!
+                    </button>
+                </div>
             </section>
 
             <section className="bg-foreground flex flex-col items-center text-center justify-center px-4 py-8 lg:py-8 gap-6">

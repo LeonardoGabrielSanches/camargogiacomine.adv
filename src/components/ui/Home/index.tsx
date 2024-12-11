@@ -3,15 +3,15 @@ import WorkingAreasSection from "./working-areas-section";
 import OfficeSection from "./office-section";
 import ContactSection from "./contact-section";
 import ArticlesSection from "./articles-section";
-import { Office2 } from "./office2";
+import { Team } from "./team";
 
 export default function Home() {
     return (
         <div>
             <HomeSection />
             <OfficeSection />
+            <Team />
             <WorkingAreasSection />
-            <Office2 />
             <ArticlesSection />
             <ContactSection />
         </div>
