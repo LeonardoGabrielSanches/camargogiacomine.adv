@@ -128,6 +128,5 @@ export function WorkingAreasPage() {
                 </div>
             </div>
         </section>
-
     )
 }

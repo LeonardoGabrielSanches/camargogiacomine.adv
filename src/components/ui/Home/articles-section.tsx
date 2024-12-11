@@ -1,4 +1,5 @@
 import articles from '@/articles.json'
+import { Link } from 'react-router'
 
 export default function ArticlesSection() {
     return (
@@ -8,8 +9,9 @@ export default function ArticlesSection() {
 
                 <div className="flex flex-wrap justify-center gap-6 lg:gap-12 w-full">
                     {articles.highlighted.map((article, index) => (
-                        <div
+                        <Link
                             key={index}
+                            to={`/artigo/${article.slug}`}
                             className="flex flex-col items-center text-center gap-4 w-full sm:w-[48%] lg:w-[30%] bg-[#d9d9d9] border border-[#d9d9d9] rounded-lg p-6 hover:scale-105 hover:shadow-lg transition-transform duration-300 cursor-pointer"
                         >
                             <img
@@ -19,7 +21,7 @@ export default function ArticlesSection() {
                             />
                             <h1 className="text-lg lg:text-xl font-bold text-gray-800">{article.title}</h1>
                             <p className="text-gray-600 text-sm">{article.excerpt}</p>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

@@ -5,7 +5,7 @@ import ContactSection from "./contact-section";
 import ArticlesSection from "./articles-section";
 import { Team } from "./team";
 
-export default function Home() {
+export function Home() {
     return (
         <div>
             <HomeSection />

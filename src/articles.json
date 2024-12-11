@@ -3,16 +3,19 @@
         {
             "title": "Título do da página de tal coisa",
             "excerpt": "This page should focus on the law firm or the lawyer's background. As with the usual About Us pages, you can talk about the history, track record, or even the guiding principles of the firm/lawyer.",
+            "slug": "titulo-1",
             "image": "pessoa.jpg"
         },
         {
             "title": "Título do artigo gigantesco para ver o layout",
             "excerpt": "This page should focus on the law firm or the lawyer's background. As with the usual About Us pages, you can talk about the history, track record, or even the guiding principles of the firm/lawyer.",
+            "slug": "titulo-2",
             "image": "passarinho.jpg"
         },
         {
             "title": "Legal seria validar um padrão de tamanho do título e caso seja necessário também tamanho do excerto",
             "excerpt": "This page should focus on the law firm or the lawyer's background. As with the usual About Us pages, you can talk about the history, track record, or even the guiding principles of the firm/lawyer.",
+            "slug": "titulo-3",
             "image": "passarinho.jpg"
         }
     ]
