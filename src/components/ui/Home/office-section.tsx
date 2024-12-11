@@ -21,7 +21,7 @@ export default function OfficeSection() {
                             02
                         </div>
                         <p className="text-lg leading-relaxed">
-                            Guiados pela missão de construir uma advocacia acessível e de excelência, o Dr. Aristides e o Dr. Gabriel unem conhecimento técnico, experiência e comprometimento para assegurar justiça e dignidade a todos que nos confiam suas causas.
+                            Guiados pela missão de construir uma advocacia acessível e de excelência, os doutores unem conhecimento técnico, experiência e comprometimento para assegurar justiça e dignidade a todos que nos confiam suas causas.
                         </p>
                     </div>
 
