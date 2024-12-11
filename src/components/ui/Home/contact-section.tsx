@@ -1,7 +1,7 @@
-import instagramLogo from '@/assets/instagram.svg'
-import linkedinLogo from '@/assets/linkedin.svg'
-import whatsappLogo from '@/assets/whatsapp.svg'
-import facebookLogo from '@/assets/facebook.svg'
+import instagramLogo from '@/assets/instagram-blue.svg'
+import linkedinLogo from '@/assets/linkedin-blue.svg'
+import whatsappLogo from '@/assets/whatsapp-blue.svg'
+import facebookLogo from '@/assets/facebook-blue.svg'
 
 export default function ContactSection() {
     return (
