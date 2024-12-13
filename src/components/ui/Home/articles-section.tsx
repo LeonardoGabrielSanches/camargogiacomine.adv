@@ -16,7 +16,7 @@ query GetArticles {
 `
 
 export default function ArticlesSection() {
-    const { data, isLoading, error } = useQuery<{ articles: [{ titulo: string, imagem: { url: string }, excerto: string, slug: string }] }>({
+    const { data } = useQuery<{ articles: [{ titulo: string, imagem: { url: string }, excerto: string, slug: string }] }>({
         queryKey: ['articles'],
         queryFn: async () => await request(import.meta.env.VITE_GRAPHQL_ENDPOINT, query),
     });
