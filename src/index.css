@@ -5,33 +5,48 @@
 @tailwind utilities;
 
 /* Global.css ou similar */
-blockquote {
-  font-style: italic;
-  border-left: 4px solid #ddd;
-  padding-left: 1rem;
-  color: #555;
+#conteudo-artigo blockquote {
+  @apply italic border-l-4 pl-4 text-gray-500;
+  border-color: #ddd;
 }
 
-ol {
-  list-style-type: decimal;
-  margin-left: 1.5rem;
+  /* Listas ordenadas e não ordenadas */
+#conteudo-artigo ol {
+  @apply list-decimal ml-6;
 }
 
-ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
+#conteudo-artigo ul {
+  @apply list-disc ml-6;
 }
 
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 1rem 0;
+/* Tabelas com estilização */
+#conteudo-artigo table {
+  @apply border-collapse w-full my-4;
 }
 
-td, th {
-  border: 1px solid #ddd;
-  padding: 8px;
-  text-align: left;
+#conteudo-artigo td, th {
+  @apply border p-2 text-left;
+  border-color: #ddd;
+}
+
+/* Cabeçalhos */
+#conteudo-artigo h1, h2, h3, h4, h5, h6 {
+  @apply mt-6 mb-4 font-semibold text-[#174472];
+}
+
+/* Parágrafos */
+#conteudo-artigo p {
+  @apply mb-0 leading-relaxed;
+}
+
+#conteudo-artigo p + h5 {
+  @apply mt-16;
+}
+
+
+/* Links */
+#conteudo-artigo a {
+  @apply text-[#174472] hover:text-[#0d2d50] hover:underline transition-colors;
 }
 
 
@@ -105,55 +120,5 @@ td, th {
   body {
     @apply font-crimson;
     font-size: larger;
-  }
-
-  #conteudo-artigo {
-    blockquote {
-      @apply italic border-l-4 pl-4 text-gray-500;
-      border-color: #ddd;
-    }
-
-    /* Listas ordenadas e não ordenadas */
-    ol {
-      @apply list-decimal ml-6;
-    }
-
-    ul {
-      @apply list-disc ml-6;
-    }
-
-    /* Tabelas com estilização */
-    table {
-      @apply border-collapse w-full my-4;
-    }
-
-    td, th {
-      @apply border p-2 text-left;
-      border-color: #ddd;
-    }
-
-    /* Cabeçalhos */
-    h1, h2, h3, h4, h5, h6 {
-      @apply mt-6 mb-4 font-semibold text-[#174472];
-    }
-
-    /* Parágrafos */
-    p {
-      @apply mt-4 mb-4 leading-relaxed;
-    }
-
-    p + h1,
-    p + h2,
-    p + h3,
-    p + h4,
-    p + h5,
-    p + h6 {
-      @apply mb-8;
-    }
-
-    /* Links */
-    a {
-      @apply text-[#174472] hover:text-[#0d2d50] hover:underline transition-colors;
-    }
   }
 }
