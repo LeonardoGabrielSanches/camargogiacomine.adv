@@ -142,6 +142,10 @@ td, th {
       @apply mt-4 mb-4 leading-relaxed;
     }
 
+    p + h1,h2,h3,h4,h5,h6 {
+      @apply mb-8;
+    }
+
     /* Links */
     a {
       @apply text-[#174472] hover:text-[#0d2d50] hover:underline transition-colors;
