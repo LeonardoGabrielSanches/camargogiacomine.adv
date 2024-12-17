@@ -27,6 +27,7 @@ function getPageTitle(error: unknown, isLoading: boolean, articles: [{ titulo: s
 }
 
 export function Articles() {
+    console.log('abriu')
     const params = useParams();
 
     useEffect(() => {
