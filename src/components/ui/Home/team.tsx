@@ -3,7 +3,7 @@ import arisImg from '@/assets/aris.jpeg'
 
 export function Team() {
     return (
-        <section className="bg-[#101b27] text-white px-8 py-16 lg:px-32">
+        <section className="bg-[#101b27] text-white px-8 py-16 lg:px-32 lg:-mt-16">
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-4xl font-bold text-center mb-12 border-b-2 border-[#d9d9d9] pb-4">
                     A Equipe
