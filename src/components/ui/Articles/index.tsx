@@ -62,7 +62,7 @@ export function Articles() {
                             alt={data.articles[0].titulo}
                             className="w-full max-w-md mx-auto rounded-lg shadow-lg object-cover"
                         />
-                        <div className="space-y-6" dangerouslySetInnerHTML={{ __html: data.articles[0].conteudo.html }} />
+                        <div className="space-y-12" dangerouslySetInnerHTML={{ __html: data.articles[0].conteudo.html }} />
                     </div>
                 </div>
             </div>
