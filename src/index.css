@@ -106,4 +106,45 @@ td, th {
     @apply font-crimson;
     font-size: larger;
   }
+
+  #conteudo-artigo {
+    blockquote {
+      @apply italic border-l-4 pl-4 text-gray-500;
+      border-color: #ddd;
+    }
+
+    /* Listas ordenadas e não ordenadas */
+    ol {
+      @apply list-decimal ml-6;
+    }
+
+    ul {
+      @apply list-disc ml-6;
+    }
+
+    /* Tabelas com estilização */
+    table {
+      @apply border-collapse w-full my-4;
+    }
+
+    td, th {
+      @apply border p-2 text-left;
+      border-color: #ddd;
+    }
+
+    /* Cabeçalhos */
+    h1, h2, h3, h4, h5, h6 {
+      @apply mt-6 mb-4 font-semibold text-[#174472];
+    }
+
+    /* Parágrafos */
+    p {
+      @apply mt-4 mb-4 leading-relaxed;
+    }
+
+    /* Links */
+    a {
+      @apply text-[#174472] hover:text-[#0d2d50] hover:underline transition-colors;
+    }
+  }
 }

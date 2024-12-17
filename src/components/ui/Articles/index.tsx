@@ -27,7 +27,6 @@ function getPageTitle(error: unknown, isLoading: boolean, articles: [{ titulo: s
 }
 
 export function Articles() {
-    console.log('abriu')
     const params = useParams();
 
     useEffect(() => {
@@ -63,7 +62,7 @@ export function Articles() {
                             alt={data.articles[0].titulo}
                             className="w-full max-w-md mx-auto rounded-lg shadow-lg object-cover"
                         />
-                        <div className="space-y-6" dangerouslySetInnerHTML={{ __html: data.articles[0].conteudo.html }} />
+                        <div id="conteudo-artigo" className="space-y-6" dangerouslySetInnerHTML={{ __html: data.articles[0].conteudo.html }} />
                     </div>
                 </div>
             </div>
