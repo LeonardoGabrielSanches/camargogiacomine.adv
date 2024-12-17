@@ -18,7 +18,7 @@ export default function WorkingAreasSection() {
                         <h2 className="text-2xl font-semibold mb-6 text-[#174472]">
                             Direito Trabalhista
                         </h2>
-                        <ul className="space-y-4 text-[#4a4a4a]">
+                        <ul className="space-y-4 text-[#4a4a4a] list-none">
                             <li>
                                 <Link to="/areas-atuacao/defesa-trabalhadores" className="group flex items-baseline gap-2 hover:text-[#174472]">
                                     <span className="flex-shrink-0 w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
@@ -62,7 +62,7 @@ export default function WorkingAreasSection() {
                         <h2 className="text-2xl font-semibold mb-6 text-[#174472]">
                             Direito Previdenciário
                         </h2>
-                        <ul className="space-y-4 text-[#4a4a4a]">
+                        <ul className="space-y-4 text-[#4a4a4a] list-none">
                             <li>
                                 <Link to="/areas-atuacao/aposentadoria" className="group flex items-baseline gap-2 hover:text-[#174472]">
                                     <span className="flex-shrink-0 w-2 h-2 bg-[#174472] rounded-full group-hover:scale-125 transition-transform"></span>
