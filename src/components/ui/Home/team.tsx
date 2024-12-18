@@ -16,7 +16,7 @@ export function Team() {
                             alt="Dr. Aristides Jesus Camargo Filho"
                             className="w-48 h-48 rounded-full object-cover mb-6 shadow-lg"
                         />
-                        <h2 className="text-2xl font-bold mb-4">Dr. Aristides Jesus Camargo Filho</h2>
+                        <h2 className="text-white text-2xl font-bold mb-4">Dr. Aristides Jesus Camargo Filho</h2>
                         <p className="text-lg leading-relaxed">
                             Especialista em Direito Trabalhista e Previdenciário, o Dr. Aristides alia experiência e dedicação para assegurar justiça e dignidade a cada cliente.
                         </p>
@@ -28,7 +28,7 @@ export function Team() {
                             alt="Dr. Gabriel Giacomine"
                             className="w-48 h-48 rounded-full object-cover mb-6 shadow-lg"
                         />
-                        <h2 className="text-2xl font-bold mb-4">Dr. Gabriel Giacomine</h2>
+                        <h2 className="text-white text-2xl font-bold mb-4">Dr. Gabriel Giacomine</h2>
                         <p className="text-lg leading-relaxed">
                             Com expertise em Direito Previdenciário, o Dr. Gabriel é comprometido em oferecer atendimento personalizado e soluções eficientes.
                         </p>
