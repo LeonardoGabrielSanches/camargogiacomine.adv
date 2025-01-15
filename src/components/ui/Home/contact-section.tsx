@@ -7,7 +7,7 @@ export default function ContactSection() {
     return (
         <section id="contato" className="bg-[#d9d9d9] flex flex-col lg:flex-row justify-center lg:justify-evenly items-center py-16 text-[#1f364e] gap-10 lg:gap-0 px-4">
             <iframe
-                src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_MAPS_API_KEY}&place_id=ChIJs5EOG8TZxZQRFkUvVjJRe6w`}
+                src={`https://www.google.com/maps/embed/v1/place?key=${import.meta.env.VITE_MAPS_API_KEY}&q=place_id:ChIJs5EOG8TZxZQRFkUvVjJRe6w`}
                 className="w-full lg:w-[600px] h-[300px] lg:h-[450px] rounded-md shadow-md"
                 loading="lazy"
                 title="Camargo e Giacomine Advogados"
