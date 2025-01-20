@@ -43,7 +43,7 @@ export default function ContactSection() {
                         <a href="https://www.facebook.com/profile.php?id=61560800206262&locale=pt_BR" target="_blank">
                             <img src={facebookLogo} alt="Facebook logo" className="w-6 h-6 hover:opacity-75" />
                         </a>
-                        <a href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos+trabalhistas.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0" target="_blank">
+                        <a href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos.+Voc%C3%AAs+poderiam+me+ajudar%3F&type=phone_number&app_absent=0">
                             <img src={whatsappLogo} alt="Whatsapp logo" className="w-6 h-6 hover:opacity-75" />
                         </a>
                     </div>
