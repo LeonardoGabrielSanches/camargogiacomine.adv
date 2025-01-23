@@ -112,6 +112,8 @@ export default function Header({ mainPage = true }: HeaderProps) {
                 </div>
             )}
 
+            <div className="bg-background h-screen fixed top-0 left-0 w-full lg:hidden -z-10"></div>
+
             <img
                 src={lawImg}
                 alt="Law Background"
