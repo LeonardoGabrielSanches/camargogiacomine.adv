@@ -1,5 +1,6 @@
 import Header from "@/components/core/Header";
 import request, { gql } from "graphql-request"
+import { useEffect } from "react";
 import { useQuery } from "react-query";
 import { Link } from "react-router";
 
@@ -17,13 +18,20 @@ query GetArticles {
 `
 
 export function Articles() {
+    useEffect(() => {
+        const begin = document.getElementById("artigos")
+
+        begin?.scrollIntoView({ behavior: 'instant', block: 'start' })
+
+    }, [])
+
     const { data } = useQuery<{ articles: [{ titulo: string, imagem: { url: string }, excerto: string, slug: string }] }>({
         queryKey: ['articles'],
         queryFn: async () => await request(import.meta.env.VITE_GRAPHQL_ENDPOINT, query),
     });
 
     return (
-        <section id="todos-artigos" className="min-h-screen bg-gradient-to-b from-[#174472] to-[#d9d9d9] p-6 lg:p-16 text-[#1f364e]">
+        <section id="artigos" className="min-h-screen bg-gradient-to-b from-[#174472] to-[#d9d9d9] p-6 lg:p-16 text-[#1f364e]">
             <Header mainPage={false} />
             <div className="max-w-5xl mx-auto space-y-16 mt-10">
                 <h1 className="text-3xl lg:text-4xl font-semibold text-center text-white drop-shadow-md">

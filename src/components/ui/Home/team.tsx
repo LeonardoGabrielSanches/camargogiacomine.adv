@@ -34,6 +34,17 @@ export function Team() {
                         </p>
                     </div>
                 </div>
+
+                <div className="flex justify-center mt-20">
+                    <a
+                        href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos.+Voc%C3%AAs+poderiam+me+ajudar%3F&type=phone_number&app_absent=0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-8 py-4 bg-white text-[#174472] text-lg font-semibold rounded-lg shadow-md hover:bg-gray-100 hover:text-[#1f5c8e] hover:shadow-lg hover:scale-105 transition-transform duration-300"
+                    >
+                        Fale com um advogado
+                    </a>
+                </div>
             </div>
         </section>
     )
