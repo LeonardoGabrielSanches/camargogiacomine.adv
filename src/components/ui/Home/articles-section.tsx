@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 
 const query = gql`
 query GetArticles {
-  articles {
+  articles(where: {emDestaque: true}) {
     titulo
     imagem {
       url
@@ -42,6 +42,15 @@ export default function ArticlesSection() {
                             <p className="text-gray-600 text-sm">{article.excerto}</p>
                         </Link>
                     ))}
+                </div>
+
+                <div className="flex justify-center mt-4">
+                    <Link
+                        to="/artigos"
+                        className="px-8 py-4 text-base lg:text-lg bg-[#d9d9d9] text-gray-800 font-bold rounded-lg hover:bg-[#bfbfbf] transition-all duration-300"
+                    >
+                        Ver todos os artigos
+                    </Link>
                 </div>
             </div>
         </section>

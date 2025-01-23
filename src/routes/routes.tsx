@@ -1,3 +1,4 @@
+import { Article } from "@/components/ui/Article"
 import { Articles } from "@/components/ui/Articles"
 import { Home } from "@/components/ui/Home"
 import { WorkingAreasPage } from "@/components/ui/WorkingAreas"
@@ -10,7 +11,8 @@ export function AppRoutes() {
                 <Route path="/" element={<Home />} />
                 <Route path="/:selector" element={<Home />} />
                 <Route path="areas-atuacao/:slug" element={<WorkingAreasPage />} />
-                <Route path="artigo/:slug" element={<Articles />} />
+                <Route path="artigos" element={<Articles />} />
+                <Route path="artigo/:slug" element={<Article />} />
             </Routes>
         </BrowserRouter>
     )
