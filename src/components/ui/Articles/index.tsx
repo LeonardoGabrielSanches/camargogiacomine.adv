@@ -71,9 +71,17 @@ export function Articles() {
                             </div>
                         </>
                     )}
+                    <div className="mt-8 flex justify-center">
+                        <a
+                            href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos.+Voc%C3%AAs+poderiam+me+ajudar%3F&type=phone_number&app_absent=0"
+                            target="_blank"
+                            className="px-6 py-3 uppercase bg-[#174472] text-white rounded-lg shadow-md text-center text-lg font-semibold transition-all duration-300 ease-in-out hover:bg-[#0f3556] focus:outline-none"
+                        >
+                            Fale Conosco
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
-
     )
 }
