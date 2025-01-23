@@ -5,7 +5,7 @@ import { Link } from "react-router";
 
 const query = gql`
 query GetArticles {
-  articles {
+  articles(orderBy: createdAt_DESC) {
     titulo
     imagem {
       url
