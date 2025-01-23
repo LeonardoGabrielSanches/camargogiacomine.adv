@@ -58,7 +58,7 @@ export default function Header({ mainPage = true }: HeaderProps) {
                     <img src={facebookLogo} alt="Facebook logo" className="w-5 h-5 hover:opacity-75" />
                 </a>
                 <a
-                    href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos+trabalhistas.+Voc%C3%AA+poderia+me+ajudar%3F&type=phone_number&app_absent=0"
+                    href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos.+Voc%C3%AAs+poderiam+me+ajudar%3F&type=phone_number&app_absent=0"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
