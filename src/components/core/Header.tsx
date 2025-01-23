@@ -87,25 +87,43 @@ export default function Header({ mainPage = true }: HeaderProps) {
             </header>
 
             {menuOpen && (
-                <div className="absolute top-24 left-0 w-full bg-foreground shadow-lg rounded-lg py-6 px-8 text-white">
-                    <div className="flex flex-col items-start space-y-4">
-                        <button onClick={() => navigateTo("inicio")} className="text-lg font-semibold hover:text-hover transition-all duration-300">
+                <div className={`absolute top-0 left-0 w-full h-screen bg-[hsl(211,43%,21%)] shadow-lg rounded-lg py-6 px-8 text-white transition-all duration-500 ease-in-out ${menuOpen ? 'max-h-screen' : 'max-h-0 overflow-hidden'}`}>
+                    <button onClick={toggleMenu} className="text-white hover:text-[#d9d9d9] transition-all duration-300 transform hover:scale-125 focus:outline-none">
+                        {menuOpen ? "✖" : "☰"}
+                    </button>
+                    <div className="flex flex-col items-start space-y-6 h-full justify-center">
+                        <button
+                            onClick={() => navigateTo("inicio")}
+                            className="text-lg font-semibold hover:text-[#d9d9d9] transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none"
+                        >
                             Início
                         </button>
-                        <div className="w-full h-0.5 bg-white" />
-                        <button onClick={() => navigateTo("escritorio")} className="text-lg font-semibold hover:text-hover transition-all duration-300">
+                        <div className="w-full h-0.5 bg-[#d9d9d9]" />
+                        <button
+                            onClick={() => navigateTo("escritorio")}
+                            className="text-lg font-semibold hover:text-[#d9d9d9] transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none"
+                        >
                             O Escritório
                         </button>
-                        <div className="w-full h-0.5 bg-white" />
-                        <button onClick={() => navigateTo("areas-atuacao")} className="text-lg font-semibold hover:text-hover transition-all duration-300">
+                        <div className="w-full h-0.5 bg-[#d9d9d9]" />
+                        <button
+                            onClick={() => navigateTo("areas-atuacao")}
+                            className="text-lg font-semibold hover:text-[#d9d9d9] transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none"
+                        >
                             Áreas de Atuação
                         </button>
-                        <div className="w-full h-0.5 bg-white" />
-                        <button onClick={() => navigateTo("artigos")} className="text-lg font-semibold hover:text-hover transition-all duration-300">
+                        <div className="w-full h-0.5 bg-[#d9d9d9]" />
+                        <button
+                            onClick={() => navigateTo("artigos")}
+                            className="text-lg font-semibold hover:text-[#d9d9d9] transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none"
+                        >
                             Publicações
                         </button>
-                        <div className="w-full h-0.5 bg-white" />
-                        <button onClick={() => navigateTo("contato")} className="text-lg font-semibold hover:text-hover transition-all duration-300">
+                        <div className="w-full h-0.5 bg-[#d9d9d9]" />
+                        <button
+                            onClick={() => navigateTo("contato")}
+                            className="text-lg font-semibold hover:text-[#d9d9d9] transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none"
+                        >
                             Contato
                         </button>
                     </div>
