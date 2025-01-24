@@ -1,4 +1,5 @@
-import request, { gql } from 'graphql-request'
+import { fetchHygraphData } from '@/lib/graphql';
+import { gql } from 'graphql-request'
 import { useQuery } from 'react-query';
 import { Link } from 'react-router'
 
@@ -18,7 +19,7 @@ query GetArticles {
 export default function ArticlesSection() {
     const { data } = useQuery<{ articles: [{ titulo: string, imagem: { url: string }, excerto: string, slug: string }] }>({
         queryKey: ['articles'],
-        queryFn: async () => await request(import.meta.env.VITE_GRAPHQL_ENDPOINT, query),
+        queryFn: async () => await fetchHygraphData(query),
     });
 
     return (

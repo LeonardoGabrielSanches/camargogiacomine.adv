@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 import { useParams } from "react-router";
-import { request, gql } from "graphql-request";
+import { gql } from "graphql-request";
 import { useQuery } from "react-query";
 
 import Header from "@/components/core/Header";
 import Skeleton from "react-loading-skeleton";
 import 'react-loading-skeleton/dist/skeleton.css'
+import { fetchHygraphData } from "@/lib/graphql";
 
 const query = gql`
 query GetArticles($slug: String!) {
@@ -42,7 +43,7 @@ export function Article() {
 
     const { data, isLoading, error } = useQuery<{ articles: [{ titulo: string, imagem: { url: string }, conteudo: { html: string } }] }>({
         queryKey: ['articles', params.slug],
-        queryFn: async () => await request(import.meta.env.VITE_GRAPHQL_ENDPOINT, query, { slug: params.slug }),
+        queryFn: async () => await fetchHygraphData(query, { slug: params.slug }),
         enabled: !!params.slug,
     });
 
