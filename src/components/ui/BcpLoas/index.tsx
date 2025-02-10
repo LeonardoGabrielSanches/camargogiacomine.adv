@@ -210,7 +210,7 @@ export default function BPCSection() {
                 </div>
             </div>
 
-            <div className="max-w-4xl mx-auto bg-[#D9D9D9] text-[#101b27] px-24 pb-8 space-y-6 lg:rounded-xl">
+            <div className="max-w-4xl mx-auto bg-[#D9D9D9] text-[#101b27] lg:px-24 lg:pb-8 space-y-6 lg:rounded-xl">
                 <h2 className="text-2xl font-bold text-center text-[#174472]">Quem irá te representar:</h2>
 
                 <div className="flex flex-col md:flex-row justify-center items-center gap-16">
