@@ -1,0 +1,1 @@
+export const whatsappUrl = (message: string): string => `https://api.whatsapp.com/send/?phone=5515997681165&text=${message}&type=phone_number&app_absent=0`
