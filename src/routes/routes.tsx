@@ -1,3 +1,4 @@
+import { FloatingButton } from "@/components/core/FloatingButton"
 import { Article } from "@/components/ui/Article"
 import { Articles } from "@/components/ui/Articles"
 import BPCSection from "@/components/ui/BpcLoas"
@@ -8,6 +9,8 @@ import { BrowserRouter, Route, Routes } from "react-router"
 export function AppRoutes() {
     return (
         <BrowserRouter>
+            <FloatingButton />
+
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/:selector" element={<Home />} />

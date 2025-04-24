@@ -1,4 +1,10 @@
+import { useLocation } from "react-router";
+
 export function FloatingButton() {
+    const { pathname } = useLocation();
+
+    if (pathname === "/bpcloas") return null;
+
     return (
         <a
             href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos.+Voc%C3%AAs+poderiam+me+ajudar%3F&type=phone_number&app_absent=0"

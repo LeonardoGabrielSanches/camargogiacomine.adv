@@ -43,8 +43,9 @@ export function BPCLoasModal({ handleToggleModal }: BPCLoasModalProps) {
             || beneficio == "sim"
     }
 
-    function handleSubmit() {
+    const isButtonDisabled = !answers.idade || !answers.deficiencia || !answers.renda || !answers.beneficio || !answers.cadunico
 
+    function handleSubmit() {
         if (cannotBpcLoas())
             setSuccessFailModal({
                 isVisible: true, message: (<>
@@ -148,7 +149,8 @@ export function BPCLoasModal({ handleToggleModal }: BPCLoasModalProps) {
                                 <button
                                     type="button"
                                     onClick={handleSubmit}
-                                    className="bg-[#101b27] hover:bg-[#16293d] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300"
+                                    className="bg-[#101b27] hover:bg-[#16293d] text-white font-semibold py-3 px-8 rounded-full transition-all duration-300 disabled:opacity-55"
+                                    disabled={isButtonDisabled}
                                 >
                                     Tenho direito ao BPC/LOAS?
                                 </button>

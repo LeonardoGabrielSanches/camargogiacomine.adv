@@ -231,7 +231,7 @@ export default function BPCSection() {
                         </div>
                     </div>
 
-                    <div className="flex justify-center">
+                    <div className="flex justify-center p-4">
                         <button
                             onClick={handleTalkToLawyer}
                             className="flex uppercase items-center gap-2 text-center px-8 py-4 bg-green-600 text-white font-semibold rounded-full hover:bg-green-700 transition duration-300 shadow-lg shadow-green-500/50 transform hover:translate-y-1"
@@ -256,13 +256,9 @@ export default function BPCSection() {
                         <a href="https://www.facebook.com/profile.php?id=61560800206262&locale=pt_BR" target="_blank" rel="noopener noreferrer">
                             <img src={facebookLogo} alt="Facebook logo" className="w-5 h-5 hover:opacity-75" />
                         </a>
-                        <a
-                            href="https://api.whatsapp.com/send/?phone=5515997681165&text=Ol%C3%A1%21+Tenho+algumas+d%C3%BAvidas+sobre+meus+direitos.+Voc%C3%AAs+poderiam+me+ajudar%3F&type=phone_number&app_absent=0"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <button onClick={handleTalkToLawyer} >
                             <img src={whatsappLogo} alt="Whatsapp logo" className="w-5 h-5 hover:opacity-75" />
-                        </a>
+                        </button>
                     </div>
                 </div>
             </section>
