@@ -1,5 +1,6 @@
 import { whatsappUrl } from "@/utils/urls";
 import { ReactNode, useState } from "react";
+import { createPortal } from "react-dom";
 import { IoMdClose } from "react-icons/io";
 
 type BPCLoasModalProps = {
@@ -89,7 +90,7 @@ export function BPCLoasModal({ handleToggleModal }: BPCLoasModalProps) {
     }
 
     return (
-        <>
+        createPortal(<>
             <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-40 px-4">
                 <div className="bg-white text-black rounded-2xl p-6 w-full max-w-screen-lg max-h-[80vh] overflow-y-auto relative">
                     <button
@@ -163,7 +164,7 @@ export function BPCLoasModal({ handleToggleModal }: BPCLoasModalProps) {
 
             {successFailModal.isVisible
                 && (
-                    <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-4">
+                    createPortal(<div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 px-4">
                         <div className="bg-white text-black rounded-2xl p-6 w-full max-w-screen-lg max-h-[80vh] overflow-y-auto relative">
                             <button
                                 onClick={handleToggleModal}
@@ -175,8 +176,9 @@ export function BPCLoasModal({ handleToggleModal }: BPCLoasModalProps) {
                                 {successFailModal.message}
                             </div>
                         </div>
-                    </div>
+                    </div>,
+                        document.body)
                 )}
-        </>
+        </>, document.body)
     )
 }
